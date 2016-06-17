@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="utf-8">
+	<title>Formulario</title>
+	<link rel="stylesheet" type="text/css" href="resultado.css">
+	<script type="text/javascript" src="funciono.js"></script>
+   
+</head>
+<body>
+
+    <form action="resultado.php" method="post" onSubmit="return validar();">
+        <font color="red"><h1 >FORMULARIO PGC</h1></font>
+        <br><br>
+        <label for="nombre">Ingrese su nombre:</label>
+    	<input type="text" placeholder="NOMBRE" id="nombre" name="nombre">
+    	<br><br>
+
+    	 <label for="edad">Ingrese su edad:</label>
+    	<input type="text" placeholder="edad"  id="edad" maxlength="3" name="edad">
+
+    	<br><br>
+
+    	<label for="peso">Ingrese su peso:</label>
+    	<input type="integer" placeholder="PESO" maxlength="3" id="peso" name="peso">
+       	<br><br>
+
+    	<h2><font color="#FF0040">sexo</h2><br></FONT>
+    	<input type="radio" name="sexo" id="sexoh"  value="hombre" onclick ="muestra('hombre'); oculta ('mujer')"><label for="sexoh" > HOMBRE</label> 
+
+<input type="radio" name="sexo" id "sexom" value="mujer" onclick ="muestra('mujer'); oculta ('hombre')" ><label for="sexom" > MUJER</label>
+        <br><br>
+    
+         <div id="hombre">
+        <label for="cuello">CUELLO (CM): </label>
+        <input type="text" id="cuello"  maxlength="3" name="cuello1">
+        <br><br>
+
+        <label for="cintura">CINTURA (CM): </label>
+        <input type="text" id="cintura" maxlength="3" name="cintura1">
+        <br><br>
+
+        <label for="altura">ALTURA (CM): </label>
+        <input type="text" id="altura" maxlength="3" name="altura1">
+        <br><br>
+        </div>
+        
+        <div id="mujer">
+    	<label for="cue">CUELLO (CM): </label>
+    	<input type="text" id="cuello"  maxlength="3" name="cuello">
+    	<br><br>
+
+    	<label for="cin">CINTURA (CM): </label>
+    	<input type="text" id="cintura" maxlength="3" name="cintura">
+    	<br><br>
+
+        <label for="altu">ALTURA (CM): </label>
+        <input type="text" id="altura" maxlength="3" name="altura">
+        <br><br>
+
+        <label for="cadera">CADERA (CM): </label>
+        <input type="text" id="cadera" maxlength="3" name="cadera">
+
+        <br>
+        </div>
+       
+    	<button type="subimit" name="envio" > ENVIAR </button>
+
+
+        <button type="subimit" name="envio" > BORRAR </button>
+    	
+
+    </form>
+</body>
+</html>
